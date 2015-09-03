@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess
 {
-    public class Class1
+    class DataAccessSample
     {
-//Comment Added for checking COmmit with Devlopment Branch
-
     }
 }
