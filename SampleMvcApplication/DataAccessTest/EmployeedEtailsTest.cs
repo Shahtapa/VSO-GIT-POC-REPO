@@ -26,18 +26,6 @@ namespace DataAccessTest
         }
 
 
-        [TestMethod]
-        public void TestMethod2()
-        {
-
-            EmployeeDetailsController empController = new EmployeeDetailsController();
-
-            XmlHelper xmlHelper = new XmlHelper();
-            string xmlString = xmlHelper.GetXml();
-
-            Assert.IsTrue(empController.GetDetailsByXmlString(xmlString, 14).Count == 1);
-
-
-        }
+      
     }
 }
