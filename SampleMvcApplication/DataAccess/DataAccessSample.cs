@@ -7,5 +7,7 @@ namespace DataAccess
 {
     class DataAccessSample
     {
+
+        public int EmployeeDeduction = 0;
     }
 }
