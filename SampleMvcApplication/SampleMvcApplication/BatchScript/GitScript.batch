@@ -1,5 +1,5 @@
 
-cmd tf merge Devteam-A integration /recursive
+cmd.exe /c "tf merge Devteam-A integration /recursive""
 
 REM git checkout integration
 REM git pull origin integration
