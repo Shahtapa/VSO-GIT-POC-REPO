@@ -1,8 +1,7 @@
 
-git checkout integration
-git pull origin integration
-git merge devteam-A
-git merge devteam-B 
+
+git merge origin/devteam-A
+git merge origin/devteam-B 
 git push origin inegration
 
 
