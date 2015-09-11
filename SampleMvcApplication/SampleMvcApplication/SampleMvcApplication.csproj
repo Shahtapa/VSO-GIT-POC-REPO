@@ -147,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="BatchScript\GitScript.bat" />
+    <Content Include="BatchScript\shellScript.sh" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
