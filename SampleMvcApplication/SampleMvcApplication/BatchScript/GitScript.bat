@@ -1,8 +1,6 @@
-git config user.email "shahtapa@gmail.com"
-git config user.name "shahtapa"
+git remote add origin https://parvathymohan3.visualstudio.com/DefaultCollection/_git/VSOSampleApplication
 git merge origin/devteam-A
 git merge origin/devteam-B 
-git config push.default simple
-git push origin HEAD:integration
-git push 
+git push -u origin --all
+
 
