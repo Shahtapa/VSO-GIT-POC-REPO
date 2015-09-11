@@ -17,7 +17,6 @@ namespace SampleMvcApplication
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "EmployeeDetails", action = "Index", id = UrlParameter.Optional }
-
             );
         }
     }
