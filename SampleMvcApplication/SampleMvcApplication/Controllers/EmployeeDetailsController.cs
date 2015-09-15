@@ -18,13 +18,14 @@ namespace SampleMvcApplication.Controllers
 
         public ActionResult Index()
         {
-            
+            GetXmlFilePath();
             List<EmployeeDetailsModel> employeeDetailsModels = new List<EmployeeDetailsModel>();
             List<EmployeeViewModel> employeeDetailsViewModels = new List<EmployeeViewModel>();
             //string xmlPath = WebConfigurationManager.AppSettings["XmlFilePath"];
                string   xmlPath = Server.MapPath("~/XMLFile/SampleXML.xml");
       
          int id = 0;
+
 
          employeeDetailsModels = GetDetails(id, xmlPath);
             foreach (var v in employeeDetailsModels)
@@ -57,7 +58,14 @@ namespace SampleMvcApplication.Controllers
 
         }
 
-        
+        public string GetXmlFilePath()
+        {
+
+            string xmlFilePath = "";
+            xmlFilePath = WebConfigurationManager.AppSettings["XmlFilePath"];
+            ViewData["val1"] = xmlFilePath;
+            return xmlFilePath;
+        }
 
     }
 }
