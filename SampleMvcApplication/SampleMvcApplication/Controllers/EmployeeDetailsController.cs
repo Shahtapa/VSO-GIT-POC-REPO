@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.Mvc;
 using SampleMvcApplication.Models;
 using System.Web.Configuration;
-
+using WebApplication_GetDate;
 namespace SampleMvcApplication.Controllers
 {
     public class EmployeeDetailsController : Controller
@@ -18,6 +18,7 @@ namespace SampleMvcApplication.Controllers
 
         public ActionResult Index()
         {
+            
             GetXmlFilePath();
             List<EmployeeDetailsModel> employeeDetailsModels = new List<EmployeeDetailsModel>();
             List<EmployeeViewModel> employeeDetailsViewModels = new List<EmployeeViewModel>();
