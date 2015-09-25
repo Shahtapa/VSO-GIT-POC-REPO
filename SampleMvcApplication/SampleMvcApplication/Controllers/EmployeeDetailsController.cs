@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.Mvc;
 using SampleMvcApplication.Models;
 using System.Web.Configuration;
-using WebApplication_GetDate;
+//using WebApplication_GetDate;
 namespace SampleMvcApplication.Controllers
 {
     public class EmployeeDetailsController : Controller
@@ -18,7 +18,7 @@ namespace SampleMvcApplication.Controllers
 
         public ActionResult Index()
         {
-            get_Date();
+           // get_Date();
             GetXmlFilePath();
             List<EmployeeDetailsModel> employeeDetailsModels = new List<EmployeeDetailsModel>();
             List<EmployeeViewModel> employeeDetailsViewModels = new List<EmployeeViewModel>();
@@ -43,12 +43,12 @@ namespace SampleMvcApplication.Controllers
             return View(employeeDetailsViewModels);
         }
 
-        private void get_Date()
-        {
-            DateFile obj=new DateFile ();
-            ViewData["_Date"] =obj.get_Date() ;
+        //private void get_Date()
+        //{
+        //    DateFile obj=new DateFile ();
+        //    ViewData["_Date"] =obj.get_Date() ;
          
-        }
+        //}
 
         public List<EmployeeDetailsModel> GetDetails(int id,string xmlPath)
         {
