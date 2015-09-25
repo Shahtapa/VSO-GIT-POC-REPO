@@ -47,7 +47,7 @@ namespace SampleMvcApplication.Controllers
         {
             DateFile obj=new DateFile ();
             ViewData["_Date"] =obj.get_Date() ;
-          
+         
         }
 
         public List<EmployeeDetailsModel> GetDetails(int id,string xmlPath)
