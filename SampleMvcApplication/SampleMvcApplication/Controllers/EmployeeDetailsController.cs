@@ -12,7 +12,8 @@ namespace SampleMvcApplication.Controllers
 {
     public class EmployeeDetailsController : Controller
     {
-       
+      
+
         // GET: /EmployeeDetails/
 
         public ActionResult Index()
