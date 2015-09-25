@@ -4,4 +4,3 @@ git config user.name "parvathymohan"
 git merge origin/devteam-A
 git merge origin/devteam-B
 git push -u origin --all
-
