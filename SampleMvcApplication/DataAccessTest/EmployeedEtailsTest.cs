@@ -13,11 +13,12 @@ namespace DataAccessTest
         [TestMethod]
         public void TestMethod1()
         {
-
          EmployeeDetailsController empController = new EmployeeDetailsController();
 
          XmlHelper xmlHelper = new XmlHelper();
          string xmlString = xmlHelper.GetXml();
+
+
 
          Assert.IsTrue(empController.GetDetailsByXmlString(xmlString, 1).Count == 1);
 
