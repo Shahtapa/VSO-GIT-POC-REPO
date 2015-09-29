@@ -4,4 +4,4 @@ git config --global user.email "parvathy.mohan@rapidvaluesolutions.com"
  git merge origin/devteam-C
 git merge origin/devteam-D
 git checkout integration
-git push -u integration
+git push origin  integration
