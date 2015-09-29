@@ -7,24 +7,26 @@ using System.Web;
 using System.Web.Mvc;
 using SampleMvcApplication.Models;
 using System.Web.Configuration;
-
+//using WebApplication_GetDate;
 namespace SampleMvcApplication.Controllers
 {
     public class EmployeeDetailsController : Controller
     {
-       
-        // GET: /EmployeeDetails/
+      
 
+        // GET: /EmployeeDetails/
 
         public ActionResult Index()
         {
-            
+           // get_Date();
+            GetXmlFilePath();
             List<EmployeeDetailsModel> employeeDetailsModels = new List<EmployeeDetailsModel>();
             List<EmployeeViewModel> employeeDetailsViewModels = new List<EmployeeViewModel>();
             //string xmlPath = WebConfigurationManager.AppSettings["XmlFilePath"];
                string   xmlPath = Server.MapPath("~/XMLFile/SampleXML.xml");
       
          int id = 0;
+
 
          employeeDetailsModels = GetDetails(id, xmlPath);
             foreach (var v in employeeDetailsModels)
@@ -40,6 +42,13 @@ namespace SampleMvcApplication.Controllers
 
             return View(employeeDetailsViewModels);
         }
+
+        //private void get_Date()
+        //{
+        //    DateFile obj=new DateFile ();
+        //    ViewData["_Date"] =obj.get_Date() ;
+         
+        //}
 
         public List<EmployeeDetailsModel> GetDetails(int id,string xmlPath)
         {
@@ -57,7 +66,14 @@ namespace SampleMvcApplication.Controllers
 
         }
 
-        
+        public string GetXmlFilePath()
+        {
+
+            string xmlFilePath = "";
+            xmlFilePath = WebConfigurationManager.AppSettings["XmlFilePath"];
+            ViewData["val1"] = xmlFilePath;
+            return xmlFilePath;
+        }
 
     }
 }
