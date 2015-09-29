@@ -3,4 +3,4 @@ git remote set-url origin https://parvathymohan:parvathymohan1@github.com/Shahta
 
 git merge origin/devteam-C
 git merge origin/devteam-D
-git push -u origin master
+git push -u origin integration
