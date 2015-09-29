@@ -10,5 +10,6 @@ namespace DataAccess
 
         public int EmployeeDeduction = 0;
         //Comment Added for merge from integration branch to QA testing
+
     }
 }
