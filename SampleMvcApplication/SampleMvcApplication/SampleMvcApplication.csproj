@@ -119,6 +119,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="devTeamC.html" />
     <Content Include="Global.asax" />
     <Content Include="Integration.html" />
     <Content Include="Web.config" />
